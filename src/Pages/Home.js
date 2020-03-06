@@ -38,10 +38,6 @@ class Home extends React.Component {
         Array.from(controlPanelObj.classList).find( (element) => {
             return element !== "active" ? controlPanelObj.classList.add('active') : controlPanelObj.classList.remove('active');
         });
-        Array.from(controlPanelObj.classList).find( (element) => {
-            return element !== "active" ? this.setState({ play: false, pause: true }) : this.setState({ play: true, pause: false });
-        });
-
         Array.from(infoBarObj.classList).find( (element) =>{
             return element !== "active" ? infoBarObj.classList.add('active') : infoBarObj.classList.remove('active');
         });

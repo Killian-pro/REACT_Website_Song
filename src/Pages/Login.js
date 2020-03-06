@@ -16,10 +16,10 @@ class Login extends React.Component {
                         params={{
                             "particles": {
                                 "number": {
-                                    "value": 190,
+                                    "value": 50,
                                     "density": {
                                         "enable": true,
-                                        "value_area": 800
+                                        "value_area": 100
                                     }
                                 },
                                 "line_linked": {
@@ -65,7 +65,7 @@ class Login extends React.Component {
                                 },
 
                                 "size": {
-                                    "value": 40,
+                                    "value": 20,
                                     "random": true,
                                     "anim": {
                                         "enable": true,

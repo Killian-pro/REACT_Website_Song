@@ -28,7 +28,7 @@ class Register extends React.Component {
                     <input className='text' type="text2" alt="Login" />
                     <input className='text' type="text3" alt="Login" />
                     <a href="/Home">
-                    <input className='text2' type="submit" alt="Login" />
+                        <input className='text2' type="submit" alt="Login" />
                     </a>
                 </div>
             </div>

@@ -7,8 +7,6 @@ import Playlist from './Pages/Playlist'
 import Panier from './Pages/Panier'
 import Uploader from './Pages/Uploader'
 import Checkout from'./Pages/Checkout'
-import More from'./Pages/More'
-
 
 
 import {
@@ -35,8 +33,7 @@ class App extends React.Component {
           <Route exact path='/Playlist' component={() => <Playlist/>} />
           <Route exact path='/Panier' component={() => <Panier/>} />
           <Route exact path='/Uploader' component={() => <Uploader/>} />          
-          <Route exact path='/Checkout' component={() => <Checkout/>} />   
-          <Route exact path='/More' component={() => <More/>} />   
+          <Route exact path='/Checkout' component={() => <Checkout/>} />    
         </Switch>
       </Router>
     )
