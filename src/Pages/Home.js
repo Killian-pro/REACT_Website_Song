@@ -7,14 +7,8 @@ class Home extends React.Component {
         super(props);
         this.play = this.play.bind(this);
         this.play2 = this.play2.bind(this);
-        this.state = {
-            play: false,
-            pause: true,
-        }
-        this.url1 = "https://soundcloud.com/kip-100128735/girl-in-space";
-        this.audio1 = new Audio(this.url1);
-        this.url2 = "https://soundcloud.com/kip-100128735/girl-in-space";
-        this.audio2 = new Audio(this.url2);
+        this.audio2 = new Audio('./girl.mp3')
+        this.audio1 = new Audio('./Waves.mp3');
     }
     play = () => {
 
@@ -27,22 +21,24 @@ class Home extends React.Component {
         Array.from(infoBarObj.classList).find(function (element) {
             return element !== "active" ? infoBarObj.classList.add('active') : infoBarObj.classList.remove('active');
         });
-    
-        this.audio1.play();
+        Array.from(controlPanelObj.classList).find((element) => {
+            return element !== "active" ?  this.audio1.pause() :  this.audio1.play(); 
+        });
         this.move();
     }
     play2 = () => {
 
         let controlPanelObj = document.getElementById('control-panel2'),
             infoBarObj = document.getElementById('info2')
-        Array.from(controlPanelObj.classList).find( (element) => {
+        Array.from(controlPanelObj.classList).find((element) => {
             return element !== "active" ? controlPanelObj.classList.add('active') : controlPanelObj.classList.remove('active');
         });
-        Array.from(infoBarObj.classList).find( (element) =>{
+        Array.from(infoBarObj.classList).find((element) => {
             return element !== "active" ? infoBarObj.classList.add('active') : infoBarObj.classList.remove('active');
         });
-       
-        this.audio2.play();
+        Array.from(controlPanelObj.classList).find((element) => {
+            return element !== "active" ?  this.audio2.pause() :  this.audio2.play(); 
+        });
         this.move2();
     }
 
@@ -56,7 +52,6 @@ class Home extends React.Component {
             }
             else {
                 width++;
-                console.log(width)
                 elem.style.width = width + '%';
             }
         }
@@ -71,7 +66,6 @@ class Home extends React.Component {
             }
             else {
                 width++;
-                console.log(width)
                 elem.style.width = width + '%';
             }
         }

@@ -83,8 +83,8 @@ class Login extends React.Component {
                 <div className='maindiv'>
 
                     <img src={logo} alt="Logo" />
-                    <input className='textdiv' type="text" name="name" />
-                    <input className='textdiv' type="text" name="name" />
+                    <input className='textdiv' type="text" placeholder="Pseudo" name="name" />
+                    <input className='textdiv' type="text" placeholder="Mot de passe" name="name" />
                     <a href="/Home">
                         <input className='textdiv2' type="Submit" name="name" />
                     </a>

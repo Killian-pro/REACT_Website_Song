@@ -345,7 +345,7 @@ width: 300px;
 }
 .container-playlist .first-div
 {
-    margin-top: 5%;
+    margin-top: 2%;
     display: flex;
     flex-direction: row; 
 }
@@ -2073,7 +2073,7 @@ body{
 {
     font-size: 50px;
     color:white;
-    margin-top: 8%;
+    margin-top: 9%;
     text-align: center;
 }
 
@@ -2163,7 +2163,7 @@ body{
 
 .container-panier .end-div
 {
-    margin-top: 12%; 
+    margin-top: 7%; 
     margin-left:10%;
     display: flex;
     flex-direction: row; 
@@ -2196,7 +2196,7 @@ body{
 {
     color: white;
     font-size: 45px;
-    margin-left: 15%;
+    margin-left: 8%;
     margin-top: -1%;
 }
 .container-panier .Paiement
@@ -2217,6 +2217,7 @@ body{
 }
 .container-panier .Paiement #username
 {
+    margin-top: 1%;
     height: 50px;
     width: 400px;
     text-align: center;
@@ -2226,7 +2227,8 @@ body{
     margin-left: 10%;
 }
 .container-panier .Paiement #usersurname
-{
+{   
+    margin-top: 1%;
     height: 50px;
     width: 400px;
     text-align: center;
@@ -2235,19 +2237,10 @@ body{
     font-size: 45px;
     margin-left: 5%;
 }
-.container-panier .Paiement #usersurname
-{
-    height: 50px;
-    width: 400px;
-    text-align: center;
-    color: rgb(148, 147, 147);
-    background-color: black;
-    font-size: 45px;
-    margin-left: 5%;
-}
+
 .container-panier .card
 {
-    padding-top:5%;
+    padding-top:2%;
     padding-left:15%;
     display: flex;
     flex-direction: column; 
@@ -2325,7 +2318,7 @@ body{
 .container-uploader #charge
 {
     position:absolute;
-    top: 68%;
+    top: 80%;
     left: 38%;
     
     /* border-radius: 2em;
@@ -2339,7 +2332,7 @@ body{
 {
     padding-left: 40%;
     padding-bottom: 20%;
-    padding-top: 120%;
+    padding-top: 150%;
     color:white;
     background-color: black;
     /* border-radius: 2em;

@@ -23,10 +23,10 @@ class Register extends React.Component {
                 </div>
                 <hr />
                 <div className='formulaire'>
-                    <input className='text' type="text" alt="Login" />
-                    <input className='text' type="text1" alt="Login" />
-                    <input className='text' type="text2" alt="Login" />
-                    <input className='text' type="text3" alt="Login" />
+                    <input className='text' placeholder="Pseudo" type="text" alt="Login" />
+                    <input className='text' placeholder="Adresse mail" type="mail" alt="Login" />
+                    <input className='text' placeholder="Mot de passe" type="Password" alt="Login" />
+                    <input className='text'  placeholder="Mot de passe Confirmation" type="Password" alt="Login" />
                     <a href="/Home">
                         <input className='text2' type="submit" alt="Login" />
                     </a>
